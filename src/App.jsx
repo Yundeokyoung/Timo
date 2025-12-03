@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import Register from './components/Register';
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Register from "./components/Register.jsx";
+import Survey from "./components/Survey.jsx";
+import './App.css';
 
 export default function App() {
   
   return (
     <>
-      <div>
-        <Register.js />
-      </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Register />} />
+        <Route path="/survey" element={<Survey />} />
+      </Routes>
+    </Router>
     </>
   )
 }

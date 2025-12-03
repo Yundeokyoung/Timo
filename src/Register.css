@@ -12,12 +12,13 @@ h1, p, h4 {
 
 .top > p {
     padding-top: 15px;
+    color: rgb(113, 113, 113);
 }
 
 .container_box {
     background-color: white;
     width: 450px;
-    height: 500px;
+    height: 430px;
     margin-top: 30px;
     margin-left: 410px;
     border-radius: 23px;
@@ -43,6 +44,7 @@ h4 {
     justify-content: flex-start;
     padding-left: 14px;
     font-size: 14px;
+    font-weight: 350;
 }
 
 .name {
@@ -122,14 +124,6 @@ h4 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     border-color: #000;
     transition: 0.5s ease;
-}
-
-.check_ps > p {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 14px;
-    margin-bottom: 5px;
-    font-size: 15px;
 }
 
 .btn {
