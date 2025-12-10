@@ -1,0 +1,183 @@
+.Logo_img {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 130px;
+    margin-top: -20px;
+}
+
+.title > h1 {
+    font-size: 38px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 183px;
+    margin-top: -27px;
+}
+
+.title > p {
+    font-size: 19px;
+    color: rgb(113, 113, 113);
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 35px;
+    margin-left: 184px;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+.dashboard_btn {
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(226, 220, 221);
+}
+
+.dashboard_btn:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-color: #000;
+    transition: 0.5s ease;
+}
+
+.signout_btn {
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(226, 220, 221);
+}
+
+.signout_btn:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-color: #000;
+    transition: 0.5s ease;
+}
+
+.calendar_wrap {
+    background: rgb(248, 248, 248);
+    padding: 30px;
+    margin: 0 auto;  
+    margin-top: 30px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    margin-left: 85px;
+}
+
+.calendar-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 18px;
+}
+
+.nav-btn {
+    margin-bottom: 30px;
+    margin-top: -56px;
+}
+
+.setting-btn {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    background: rgb(248, 248, 248);
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid rgb(226, 220, 221);
+    border-radius: 11px;
+    margin-left: 835px;
+}
+
+.nav-btn-L {
+    width: 50px;
+    height: 35px;
+    font-size: 20px;
+    padding: 5px 12px;
+    border: none;
+    background: rgb(248, 248, 248);
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid rgb(226, 220, 221);
+    border-radius: 11px;
+    margin-left: 880px;
+}
+
+.nav-btn-R {
+    width: 50px;
+    height: 35px;
+    font-size: 20px;
+    padding: 5px 12px;
+    border: none;
+    background: rgb(248, 248, 248);
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid rgb(226, 220, 221);
+    border-radius: 11px;
+    margin-left: 10px;
+}
+
+.nav-btn:hover {
+    background: rgb(248, 248, 248)
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.calendar-day-header {
+    padding: 12px 0;
+    background: #f0f0f0;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.calendar-day {
+    height: 80px;
+    padding: 10px 0;
+    font-size: 18px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.calendar-day:hover {
+    background: #eef3ff;
+}
+
+.calendar-day:empty {
+    background: transparent;
+    pointer-events: none;
+}

@@ -67,17 +67,6 @@ function Register() {
                 <p>이미 계정이 있으신가요?<a href="/login">로그인</a></p>
             </div>    
         </form> 
-        <h2>회원가입 페이지</h2>
-      <p>서버 연결 없이 Survey로 이동하는 버튼</p>
-
-      {/* 버튼 클릭 시 Survey 페이지로 이동 */}
-      <button
-        className='btn'
-        onClick={() => navigate("/survey")}
-      >
-        Go to Survey
-      </button>
-
         </>
     )
 }
