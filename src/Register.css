@@ -76,7 +76,7 @@ h4 {
     transition: 0.5s ease;
 }
 
-.email > p {
+.nickname > p {
     display: flex;
     justify-content: flex-start;
     padding-left: 14px;
@@ -84,7 +84,7 @@ h4 {
     font-size: 15px;
 }
 
-.email_box {
+.nickname_box {
     width: 387px;
     height: 35px;
     border-radius: 12px;
@@ -95,7 +95,7 @@ h4 {
     font-size: 15px
 }
 
-.email_box:focus {
+.nickname_box:focus {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     border-color: #000;
     transition: 0.5s ease;
