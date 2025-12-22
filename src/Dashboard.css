@@ -1,0 +1,108 @@
+.entire_1 {
+    margin: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: rgb(248, 248, 248);
+    border: 2px solid rgb(236, 233, 233);
+    border-radius: 10px;
+}
+
+.header-buttons button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-color: #000;
+    transition: 0.5s ease;
+}
+
+.container_2 {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left .box {
+    width: 800px;
+    height: 200px;
+    border: 2px solid rgb(236, 233, 233);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left .box h4 {
+    margin: 0 0 5px 0;
+}
+
+.left .box small {
+    color: #666;
+}
+
+.left .smallbox {
+    width: 800px;
+    height: 225px;
+    border: 2px solid rgb(236, 233, 233);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.smallbox h4 {
+    margin: 0 0 15px 0;
+}
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+}
+
+.moresmallbox {
+    flex: 1;
+    border: 2px solid rgb(236, 233, 233);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.moresmallbox small {
+    color: #666;
+}
+
+.moresmallbox h3 {
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+
+.right {
+    width: 350px;
+    height: 450px;
+    border: 2px solid rgb(236, 193, 190);
+    background-color: rgb(246, 234, 233);
+    border-radius: 10px;
+}
