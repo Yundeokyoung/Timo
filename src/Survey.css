@@ -16,6 +16,8 @@
     margin-bottom: 5px;
 }
 
+
+
 .question_box {
     background-color: white;
     width: 630px;
@@ -36,7 +38,7 @@
     display: flex;
     justify-content: flex-start;
     background-color: white;
-    width: 575px;
+    width: 620px;
     height: 43px;
     border: 1px solid rgb(226, 220, 221);
     border-radius: 10px;

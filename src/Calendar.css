@@ -52,6 +52,25 @@
     transition: 0.5s ease;
 }
 
+.feedback_btn {
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(226, 220, 221);
+    margin-right: 10px;
+}
+
+.feedback_btn:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-color: #000;
+    transition: 0.5s ease;
+}
+
 .signout_btn {
     width: 90px;
     height: 35px;
@@ -96,21 +115,6 @@
 .nav-btn {
     margin-bottom: 30px;
     margin-top: -56px;
-}
-
-.setting-btn {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    font-size: 15px;
-    padding: 5px;
-    border: none;
-    background: rgb(248, 248, 248);
-    border-radius: 6px;
-    cursor: pointer;
-    border: 2px solid rgb(226, 220, 221);
-    border-radius: 11px;
-    margin-left: 815px;
 }
 
 .nav-btn-L {
@@ -254,13 +258,16 @@
 }
 
 .schedule_box {
+    position: relative;
+    display: flex;
     background-color: rgb(224, 234, 252);
-    width: 690px;
+    width: 600px;
     height: 60px;
     border-radius: 10px;
     border: 2px solid rgb(152, 188, 253);
     margin-left: 35px;
     padding: 0 15px;
+    margin-bottom: 10px;
 }
 
 .time_badge {
@@ -273,23 +280,25 @@
     align-items: center;
     font-weight: bold;
     color: #2d3e8e;
-    font-size: 18px;
-    margin-right: 15px;
-    margin-top: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 1px;
 }
 
-/* 중앙 정보 영역 */
 .schedule_info {
-    flex-grow: 1; /* 남은 공간을 모두 차지하도록 함 */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .activity {
-    margin-right: 35em;
-    margin-top: -40px;
+    margin-top: 3px;
+    text-align: left;
 }
 
 .details {
-    margin-right: 40em;
+    text-align: left; 
 }
 
 .schedule_info .activity {
@@ -303,28 +312,19 @@
     color: #7a8ebf;
 }
 
-/* 오른쪽 레이아웃 (카테고리 + 삭제) */
 .schedule_side {
     display: flex;
     align-items: center;
     gap: 12px;
+    justify-content: space-between; 
+    width: 100%;
 }
 
-/* 카테고리 알약 모양 태그 */
-.category_tag {
-    margin-left: 46em;
-    margin-top: -43px;
-    background-color: white;
-    padding: 4px 12px;
-    border-radius: 15px;
-    font-size: 13px;
-    font-weight: bold;
-    color: #2d3e8e;
-}
-
-/* 휴지통 버튼 */
 .delete_btn {
-    margin-top: -40px;
+    position: absolute;
+    right: 20px;      
+    top: 50%;      
+    transform: translateY(-50%); 
     background: none;
     border: none;
     cursor: pointer;
@@ -346,6 +346,7 @@
     width: 340px;
     height: 60px;
     margin-right: 13px;
+    cursor: pointer;
 }
 
 .addTime_btn:hover{
@@ -362,6 +363,13 @@
     color: white;
     width: 340px;
     height: 60px;
+    cursor: pointer;
+}
+
+.AI_btn:hover {
+    border-color: rgb(50, 83, 246);
+    background-color: rgb(50, 83, 246);
+    transition: 0.5s ease;
 }
 
 .addTime {
@@ -392,6 +400,7 @@
     padding: 0px;
     margin-top: -50px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .activity_name {
@@ -423,16 +432,16 @@
     border: 2px solid rgb(204, 207, 213);
 }
 
-.time_required > h4 {
+.End_time > h4 {
     margin-left: -130px;
 }
 
-.time_required {
+.End_time {
     margin-left: 500px;
     margin-top: -89px;
 }
 
-.timeRequired_box {
+.EndTime_box {
     width: 280px;
     height: 25px;
     padding: 5px;
@@ -455,6 +464,76 @@
 }
 
 .add_btn:hover {
+    border-color: rgb(70, 100, 255);
+    background-color: rgb(70, 100, 255);
+    transition: 0.5s ease;
+}
+
+.AI_Recommendation {
+    display: none;
+    margin-top: 50px;
+    margin-left: 42px;
+    background: rgb(253, 251, 236);
+    border: 3px solid rgb(244, 228, 131);
+    border-radius: 10px;
+    width: 700px;
+    height: auto;
+}
+
+.AI_Recommendation > h3{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+.closebtn {
+    background-color: rgb(253, 251, 236);
+    float: right;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0px;
+    margin-top: -50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ai_add_btn {
+    width: 580px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(82, 112, 255);
+    border-radius: 18px;
+    border: 2px solid rgb(82, 112, 255);
+    font-size: 15px;
+    color: white;
+}
+
+.ai_add_btn:hover {
+    border-color: rgb(70, 100, 255);
+    background-color: rgb(70, 100, 255);
+    transition: 0.5s ease;
+}
+
+.AI_add_btn {
+    width: 600px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: rgb(82, 112, 255);
+    border-radius: 18px;
+    border: 2px solid rgb(82, 112, 255);
+    font-size: 15px;
+    color: white;
+}
+
+.AI_add_btn:hover {
     border-color: rgb(70, 100, 255);
     background-color: rgb(70, 100, 255);
     transition: 0.5s ease;

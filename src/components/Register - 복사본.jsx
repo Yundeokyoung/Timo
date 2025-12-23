@@ -14,7 +14,7 @@ function Register() {
 
         try {
             const res = await fetch(
-                "https://volcanic-lilla-unenamelled.ngrok-free.dev/Timo/auth/register",
+                "https://2bf2c0bdb4ab.ngrok-free.app/Lumi/auth/register",
                 {
                     method: "POST",
                     headers: {
@@ -33,12 +33,6 @@ function Register() {
 
             if (res.ok) {
                 alert(data.message);
-
-                localStorage.setItem("nickname", nickname);
-                if (data.token) {
-                    localStorage.setItem("token", data.token);
-                }
-
                 navigate("/survey");
             } else {
                 alert("회원가입 실패: " + data.message);
@@ -64,6 +58,10 @@ function Register() {
                         <p>이름</p>
                         <input type='text' value={name} className='name_box' onChange={e => setName(e.target.value)} id='user-name' placeholder='홍길동' />
                     </div>
+                    <div className='email'>
+                        <p>이메일</p>
+                        <input type='email' value={name} className='name_box' onChange={e => setName(e.target.value)} id='user-name' placeholder='홍길동' />
+                    </div>
                     <div className='nickname'>
                         <p>닉네임</p>
                         <input type="text" value={nickname} className='nickname_box' onChange={e => setNickname(e.target.value)} id='user-nickname' placeholder='닉네임을 적어주세요.' />
@@ -78,6 +76,17 @@ function Register() {
                     <p>이미 계정이 있으신가요? <a href='/'>로그인</a></p>
                 </div>
             </form>
+
+            <h2>메인서버 페이지</h2>
+            <p>서버 연결 없이 메인 페이지로 이동하는 버튼</p>
+            <button className='btn' onClick={() => navigate("/Survey")}>
+                Go to Survey
+            </button>
+            <h2>메인서버 페이지</h2>
+            <p>서버 연결 없이 메인 페이지로 이동하는 버튼</p>
+            <button className='btn' onClick={() => navigate("/Calendar")}>
+                Go to Calendar
+            </button>
         </>
     )
 }

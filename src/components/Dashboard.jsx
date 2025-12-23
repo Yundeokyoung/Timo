@@ -28,14 +28,14 @@ function dashboard() {
             <div className="container_2">
                 <div className="left">
                     <div className="box">
-                        <h4>주간 공부 시간</h4>
-                        <small>지난 7일간의 학습 시간 통계</small>
+                        <h4>일간 활동 시간</h4>
+                        <small></small>
                     </div>
                     <div className="smallbox">
                         <h4>통계</h4>
                         <div className="stats-container">
                             <div className="moresmallbox">
-                                <small>총 학습 시간</small>
+                                <small>총 활동 시간</small>
                             </div>
                             <div className="moresmallbox">
                                 <small>기록된 날짜</small>

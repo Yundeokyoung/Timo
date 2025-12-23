@@ -12,7 +12,7 @@ function Login() {
         }
 
         try {
-            const res = await fetch("https://2bf2c0bdb4ab.ngrok-free.app/Lumi/auth/login", {
+            const res = await fetch("https://volcanic-lilla-unenamelled.ngrok-free.dev/Timo/auth/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -41,8 +41,8 @@ function Login() {
             <div className="container_1">
                 <div className="logo-section">
                     <div className="top_1">
-                        <img src="Lumi_image.png" width="55" height="55" />
-                        <h1 className="logo-title">Lumi</h1>
+                        <img src="Timo.png" width="55" height="55" />
+                        <h1 className="logo-title">Timo</h1>
                     </div>
                     <p className="subtitle">로그인하여 시작하세요</p>
                 </div>
@@ -67,7 +67,7 @@ function Login() {
 
                     <div className="signup-section">
                         계정이 없으신가요?
-                        <a href="/regsiter" className="signup-link">회원가입</a>
+                        <a href="/register" className="signup-link">회원가입</a>
                     </div>
                 </div>
             </div>
