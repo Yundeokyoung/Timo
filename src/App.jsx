@@ -5,6 +5,7 @@ import './App.css';
 import Calendar from "./components/Calendar.jsx";
 import Login from "./components/Login.jsx";
 import Dashboard from "./components/dashboard.jsx";
+import Feedback from "./components/Feedback.jsx";
 
 export default function App() {
   
@@ -12,11 +13,12 @@ export default function App() {
     <>
     <Router>
       <Routes>
-        <Route path="/regsiter" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/survey" element={<Survey />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />}/>
+        <Route path="/feedback" element={<Feedback />} v />
       </Routes>
     </Router>
     </>

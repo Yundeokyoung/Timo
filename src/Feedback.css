@@ -1,0 +1,118 @@
+.back_button {
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(248, 248, 248);
+    border: rgb(248, 248, 248);
+    cursor: pointer;
+}
+
+.back_button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-color: #000;
+    transition: 0.5s ease;
+}
+
+.back_icon {
+    margin-right: 18px;
+}
+
+.the_top {
+    margin-top: 40px;
+    margin-right: 45em;
+}
+
+.the_top > h1 {
+    font-size: 40px;
+    margin-left: 27px;
+}
+
+.the_top > p {
+    margin-top: -10px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+}
+
+.feedback_container {
+    background-color: white;
+    width: 800px;
+    height: 800px;
+    margin-left: 235px;
+    border-radius: 20px;
+    border: 1px solid rgb(226, 220, 221);
+}
+
+.feedback_container > h2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+.example {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 42px;
+}
+
+.ex {
+    background-color: white;
+    padding: 5px 10px;
+    width: auto;
+    height: 30px;
+    border: 2px solid rgb(212, 215, 220);
+    border-radius: 10px;
+}
+
+.line {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 700px;
+    margin-left: 50px;                 
+    border-top: 2px solid rgb(233, 234, 238);
+}
+
+.opinion {
+    margin-right: 40em;
+}
+
+.opinion_box {
+    margin-left: 5px;
+    padding: 20px;
+    width: 660px;
+    height: 300px;
+    border-radius: 20px;
+    border: 2px solid rgb(204, 207, 214);
+    font-size: 15px;
+    transition: 0.5s ease;
+    outline: none;
+    resize: none; 
+    overflow: auto;
+}
+
+.opinion_box:focus {
+    border: 2px solid rgb(90, 118, 255);
+}
+
+.feedbackbtn {
+    width: 700px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-top: 50px;
+    color: white;
+    background-color: rgb(90, 112, 255);
+    border: none;
+    cursor: pointer;
+}
+
+.feedbackbtn:hover {
+    background-color: rgb(65, 90, 255);
+    border-color: rgb(65, 90, 255);
+    transition: 0.5s ease;
+}
