@@ -5,6 +5,10 @@ function Login() {
     const [nickname, setNickname] = useState("");
     const [password, setPassword] = useState("");
 
+    const RegisterBtn = () => {
+        window.location.href = '/register'
+    }
+
     const handleLogin = async () => {
         if (!nickname || !password) {
             alert("닉네임과 비밀번호를 입력해주세요.");
@@ -27,6 +31,7 @@ function Login() {
 
             if (data.token) {
                 localStorage.setItem("token", data.token);
+                localStorage.setItem("nickname", data.nickname);
                 window.location.href = "/calendar";
             }
         } catch (err) {
@@ -42,7 +47,7 @@ function Login() {
                 <div className="logo-section">
                     <div className="top_1">
                         <img src="Timo.png" width="55" height="55" />
-                        <h1 className="logo-title">Timo</h1>
+                        <h1 className="logo-title" onClick={RegisterBtn}>Timo</h1>
                     </div>
                     <p className="subtitle">로그인하여 시작하세요</p>
                 </div>

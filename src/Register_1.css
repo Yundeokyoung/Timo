@@ -1,0 +1,222 @@
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+h1, p, h4 {
+    margin: 10px;
+}
+
+.top {
+    margin-top: 40px;
+}
+
+.top > p {
+    padding-top: 15px;
+    color: rgb(113, 113, 113);
+}
+
+.container_box {
+    background-color: white;
+    width: 450px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 410px;
+    border-radius: 23px;
+    border: 2px solid rgb(226, 220, 221);
+}
+
+.Logo {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    margin-left: -100px;
+}
+
+h4 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 14px;
+    margin-bottom: -16px;
+}
+
+.main > p {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 14px;
+    font-size: 14px;
+    font-weight: 350;
+}
+
+.name {
+    margin-top: 20px;
+}
+
+.name > p {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 14px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.name_box {
+    width: 387px;
+    height: 35px;
+    border-radius: 12px;
+    border: 1px solid rgb(226, 220, 221);
+    outline: none;
+    padding-left: 11px;
+    margin-left: 1px;
+    font-size: 15px
+}
+
+.name_box:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-color: #000;
+    transition: 0.5s ease;
+}
+
+.email > p {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 14px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.email_box {
+    width: 387px;
+    height: 35px;
+    border-radius: 12px;
+    border: 1px solid rgb(226, 220, 221);
+    outline: none;
+    padding-left: 11px;
+    margin-left: 1px;
+    margin-bottom: 10px;
+    font-size: 15px
+}
+
+.email_box:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-color: #000;
+    transition: 0.5s ease;
+}
+
+.nickname > p {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 14px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.nickname_box {
+    width: 387px;
+    height: 35px;
+    border-radius: 12px;
+    border: 1px solid rgb(226, 220, 221);
+    outline: none;
+    padding-left: 11px;
+    margin-left: 1px;
+    font-size: 15px
+}
+
+.nickname_box:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-color: #000;
+    transition: 0.5s ease;
+}
+
+.ps > p {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 14px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.password_box {
+    width: 387px;
+    height: 35px;
+    border-radius: 12px;
+    border: 1px solid rgb(226, 220, 221);
+    outline: none;
+    padding-left: 11px;
+    margin-left: 1px;
+    font-size: 15px
+}
+
+.password_box:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-color: #000;
+    transition: 0.5s ease;
+}
+
+.btn {
+    width: 399px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: rgb(82, 112, 255);
+    border: rgb(82, 112, 255);
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.bottom > p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.bottom > p > a {
+    padding-left: 4px;
+    font-weight: 500;
+}
+
+.bottom > p > a:link {
+    color: blue;
+}
+
+.bottom > p > a:visited {
+    color: blue;
+}
+
+.checkbox {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.personal_information {
+    margin-left: 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+
+.privacy_box {
+    width: 80%;
+    max-width: 700px;
+    height: 80vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.privacy_header {
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;  
+}
+
+.privacy_body {
+    padding: 16px;
+    overflow-y: auto; 
+    flex: 1;
+}
